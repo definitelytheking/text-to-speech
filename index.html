@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <div class="absolute top-0 -z-10 h-full w-full bg-white"><div class="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"></div></div>
+    <div class="container mx-auto">
+        <div class="w-full min-h-[100vh] flex items justify-center flex-col">
+            <h1 class="animate-fade-in-down flex justify-center items-center text-[45px] font-[500] mt-[-50px] mb-[50px]">Text To Speech</h1>
+            <textarea placeholder="Write anything here..." class="w-[600px] h-[250px] flex self-center bg-slate-200 
+            text-[20px] border-0 outline-0 rounded-[10px] resize-none mb-[30px] text-center pt-2"></textarea>
+            <div class="flex justify-center items-center self-center w-[600px] gap-[20px]">
+                <select class="flex-1 bg-slate-200 text-black h-[50px] border-0 outline-0 rounded-[35px] py-0 px-20 appearance-none"></select>
+                <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md 
+                border border-neutral-200 bg-transparent px-6 font-medium text-neutral-600 transition-all 
+                [box-shadow:0px_4px_1px_#a3a3a3] active:translate-y-[2px] active:shadow-none">Listen</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
